@@ -1,0 +1,7 @@
+INPUT(G1)			+0		:0
+INPUT(G2)			+0		:0
+INPUT(G3)			+0		:0
+INPUT(G4)			+0		:0
+INPUT(G5)			+0		:0
+OUTPUT(G16)			+250		:3
+OUTPUT(G17)			+286		:3
