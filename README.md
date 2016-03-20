@@ -1,5 +1,5 @@
-# ADDA
-This is a project for Adaptive Circuit Design Acceleration (ADDA).
+# ACDA
+This is a project for Adaptive Circuit Design Acceleration (ACDA).
 
 The design: [ISLPED'15](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7273501) & 
             [DATE'14](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7092645)
