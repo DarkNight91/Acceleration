@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Celllib.h" />
+    <ClInclude Include="cholesky.h" />
+    <ClInclude Include="Circuit.h" />
+    <ClInclude Include="circuit_class.h" />
+    <ClInclude Include="CLHeader.h" />
+    <ClInclude Include="colours.h" />
+    <ClInclude Include="correlation_model.h" />
+    <ClInclude Include="data_structures.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="Gates.h" />
+    <ClInclude Include="gate_class.h" />
+    <ClInclude Include="gaussian_random_numbers.h" />
+    <ClInclude Include="integrate.h" />
+    <ClInclude Include="ispd_parse.h" />
+    <ClInclude Include="Level_Circuit.h" />
+    <ClInclude Include="LRACC.h" />
+    <ClInclude Include="matrix_multiplication.h" />
+    <ClInclude Include="ocl_opt.h" />
+    <ClInclude Include="parser.h" />
+    <ClInclude Include="parser_helper.h" />
+    <ClInclude Include="pdf.h" />
+    <ClInclude Include="pert.h" />
+    <ClInclude Include="ReadWriteFile.h" />
+    <ClInclude Include="TimingAnalysis.h" />
+    <ClInclude Include="timing_analysis.h" />
+    <ClInclude Include="werc_102_vlsi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cholesky.cpp" />
+    <ClCompile Include="Circuit.cpp" />
+    <ClCompile Include="circuit_class.cpp" />
+    <ClCompile Include="correlation_model.cpp" />
+    <ClCompile Include="gate_class.cpp" />
+    <ClCompile Include="gaussian_random_numbers.cpp" />
+    <ClCompile Include="integrate.cpp" />
+    <ClCompile Include="ispd_parse.cpp" />
+    <ClCompile Include="LRACC.cpp" />
+    <ClCompile Include="LRACC_Dual.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="matrix_multiplication.cpp" />
+    <ClCompile Include="ocl_opt.cpp" />
+    <ClCompile Include="parser.cpp" />
+    <ClCompile Include="parser_helper.cpp" />
+    <ClCompile Include="ReadWriteFile.cpp" />
+    <ClCompile Include="SetAdaptivity.cpp" />
+    <ClCompile Include="TimingAnalysis.cpp" />
+    <ClCompile Include="timing_analysis.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="MC.cu" />
+    <CudaCompile Include="timing.cu" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43EC5991-F6CD-4ABE-92CF-45125E91D4E6}</ProjectGuid>
+    <RootNamespace>Project</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 6.5.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Icanmakeit\new\Project2\Project2\eigen;E:\Icanmakeit\boost_1_55_0;E:\DocXX\File\Research\Project\igraph-0.7.1-msvc\include;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\shared\inc;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\OpenCL\common\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64;E:\DocXX\File\Research\Project\igraph-0.7.1-msvc\Debug;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\OpenCL\common\lib\x64;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\shared\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);E:\Project\eigen-eigen-1306d75b4a21;E:\DocXX\File\Research\Project\igraph-0.7.1-msvc\include;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\shared\inc;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\OpenCL\common\inc;E:\DocXX\File\Research\OpenCLtutorial\Exercises-Solutions-master\Exercises-Solutions-master\Exercises\C_common;E:\DocXX\File\Research\OpenCLtutorial\Exercises-Solutions-master\Exercises-Solutions-master\Exercises\Cpp_common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;E:\Icanmakeit\boost_1_55_0</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>igraph.lib;cudart.lib;OpenCL.lib;oclUtils64D.lib;shrUtils64D.lib;libboost_thread-vc120-mt-sgd-1_55.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64;E:\DocXX\File\Research\Project\igraph-0.7.1-msvc\Debug;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\OpenCL\common\lib\x64;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\shared\lib\x64;E:\Icanmakeit\boost_1_55_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);E:\Project\eigen-eigen-1306d75b4a21;E:\DocXX\File\Research\Project\igraph-0.7.1-msvc\include;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\shared\inc;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\OpenCL\common\inc;E:\DocXX\File\Research\OpenCLtutorial\Exercises-Solutions-master\Exercises-Solutions-master\Exercises\C_common;E:\DocXX\File\Research\OpenCLtutorial\Exercises-Solutions-master\Exercises-Solutions-master\Exercises\Cpp_common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;E:\Icanmakeit\boost_1_55_0</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>igraph.lib;cudart.lib;OpenCL.lib;oclUtils64D.lib;shrUtils64D.lib;libboost_thread-vc120-mt-sgd-1_55.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64;E:\DocXX\File\Research\Project\igraph-0.7.1-msvc\Debug;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\OpenCL\common\lib\x64;E:\DocXX\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\shared\lib\x64;E:\Icanmakeit\boost_1_55_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 6.5.targets" />
+  </ImportGroup>
+</Project>
