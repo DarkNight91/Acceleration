@@ -7,7 +7,7 @@ The design: [ISLPED'15](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload
 The acceleration: [ICCD'15](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7357180)
 
 # Libs
-Supporting libraries include [Boost 1_55_0(or higher)](http://www.boost.org/), [CUDA 6.5(or higher)](https://developer.nvidia.com/cuda-toolkit), [igraph 0.7.1(or higher)](http://igraph.org/c/)
+Supporting libraries include [Boost 1_55_0(or higher)](http://www.boost.org/), [CUDA 6.5(or higher)](https://developer.nvidia.com/cuda-toolkit), [igraph 0.7.1](http://igraph.org/c/)
 
 #Build
 Install the supporting libraries (Boost Graph&Thread, CUDA ToolKit for VS2013, CUDA Drivers, igraph) -> open the solution file and compile. The current version is VS2013.
