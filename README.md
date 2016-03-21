@@ -16,4 +16,4 @@ Install the supporting libraries (Boost Graph&Thread, CUDA ToolKit for VS2013, C
 [ISPD'2013](http://www.ispd.cc/contests/13/ispd2013_contest.html)
 
 #Under Construction
-Genernal Scheduling Skeleton for Parallel Acceleration of A Graph Traversal
+Genernal Scheduling Skeleton of Parallel Acceleration for Graph Traversal
